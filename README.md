@@ -7,7 +7,7 @@
 ### 加密解密
 ##### 示例代码
 ```c#
-using SMCrypto;
+using SM23Crypto;
 
 SM2Key sm2Key= SM2.GenerateKeyPairHex();
 string encryptData = SM2.DoEncrypt(msgString,sm2Key.PubKey,SM2.CipherMode.C1C3C2);
@@ -19,7 +19,7 @@ string decryptData = SM2.DoDecrypt(encryptData,sm2Key.PriKey,SM2.CipherMode.C1C3
 ## sm3
 ##### 示例代码
 ```c#
-using SMCrypto;
+using SM23Crypto;
 
 string hashData = SM3.StrSum("abc"); // 杂凑
 ```
